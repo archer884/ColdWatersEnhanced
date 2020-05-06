@@ -15,7 +15,7 @@ Based on work by Skwabie.
 
 The torpedo depth thing is a (very) little more lax here in CWE than in Epic Mod; I guess I wanted to cut the manufacturers some slack. I mean, just because the warranty is void doesn't mean it stops working *immediately,* right? :)
 
-This mod determined "advanced" torpedoes the same way the original Skwabie mod did: anything with a sensor cone greater than or equal to 55 degrees.
+This mod determines "advanced" torpedoes the same way the original Skwabie mod did: anything with a sensor cone greater than or equal to 55 degrees.
 
 ### Wide aperture arrays
 
