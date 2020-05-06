@@ -153,7 +153,7 @@ Lastly, a target is no longer considered to have endered your "baffles" based on
 
 ### Torpedo changes
 
-In the base game, active torpedoes may appear to have a "flashlight" effect when they ping a target. For a long time, I thought that my sonar was simply picking up the return from the torpedoe's pinger, and that's probably what the developers intended this mechanic to simulate, but that's not actually how it works in the game's code.
+In the base game, active torpedoes may appear to have a "flashlight" effect when they ping a target. For a long time, I thought that my sonar was simply picking up the return from the torpedo's pinger, and that's probably what the developers intended this mechanic to simulate, but that's not actually how it works in the game's code.
 
 In fact, when an active torpedo *on a wire* pings a target, that target's TMA data is set to maximum for the player, as though the torpedo were reporting the target's position via the wire. (There is no effect for a torpedo not on a wire.) The thing is, modern, advanced torpedoes can do that with or without active sensors enabled. To represent this, "smart" torpedoes now provide TMA data even without the active seeker enabled.
 
