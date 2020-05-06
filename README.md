@@ -51,7 +51,7 @@ SonarWAABaseSol=5
 
 This feature adds a single config item to all weapons (but it is only checked for torpedoes and decoys, so...) which can be used to trigger the destruction of the weapon if it descends below a certain depth. The main inspiration here is the reality that some submarines can dive deeper than some weapons can function. I heard somewhere that the original Mk48 torpedo (not the ADCAP found in-game) wasn't able to dive deep enough to engage boats of the Alfa-class, but I can't find a source. Whatever.
 
-MaxDepth for all weapons is set, by default, to 1000 feet. To change the max depth (most modern torpedoes have a maximum depth of at least 500 meters, or about 1600 feet), add a line like this to the torpedo's configuration in weapons.txt. This should appear before the "Model" section for the weapon, as in the following example (which is for the UK's Spearfish, taken from PBS).
+MaxDepth for all weapons is set, by default, to 1000 feet. To change the max depth (most modern torpedoes have a maximum depth of at least 500 meters, or about 1600 feet), add a line like this to the torpedo's configuration in weapons.txt: `MaxDepth=1640`. This should appear before the "Model" section for the weapon, as in the following example (which is for the UK's Spearfish, taken from PBS).
 
 ```
 WeaponObjectReference=uk_sf
