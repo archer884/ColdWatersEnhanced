@@ -134,17 +134,16 @@ The intent behind these configuration values was to allow for the idea of a near
 
 ```
 // Fictional high-speed towed array
-SonarModel=usn_an_bqq_15
-SonarType=ACTIVE/PASSIVE
-SonarFrequencies=L,L
-SonarActiveSensitivity=64
-SonarPassiveSensitivity=77
-SonarBaffle=170
+SonarModel=usn_tb_45
+SonarType=TOWED
+SonarFrequencies=VL,L
+SonarActiveSensitivity=0
+SonarPassiveSensitivity=94
+SonarBaffle=FALSE
 SonarNoisePerKnot=0.4
-SonarOutput=280
-SonarWAATMARate=8
-SonarWAARange=35000
-SonarWAABaseSol=4
+SonarOutput=0
+OptimumTowSpeed=10
+NeverExceedSpeed=25
 ```
 
 The fictional array above becomes less effective than the standard passive sensors at about 15 knots.
