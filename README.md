@@ -12,6 +12,7 @@ Based on work by Skwabie.
 - Baffles respect optimum tow/never exceed speed.
 - Torpedoes may report contacts (in vanilla, torpedoes only provide TMA data for existing contacts)
 - "Advanced" torpedoes may report TMA data while in passive homing mode.
+- Passive and semi-active homing missiles may require that the launch platform remain on the surface to provide guidance.
 
 The torpedo depth thing is a (very) little more lax here in CWE than in Epic Mod; I guess I wanted to cut the manufacturers some slack. I mean, just because the warranty is void doesn't mean it stops working *immediately,* right? :)
 
@@ -158,6 +159,12 @@ In fact, when an active torpedo *on a wire* pings a target, that target's TMA da
 
 Furthermore, I noticed an issue wherein torpedoes were able to provide TMA data for targets that don't appear on the sensors for your ship. This probably was a gameplay decision on the part of the developers rather than a bug, but I have changed the behavior so that torpedoes are able to trigger new contacts.
 
+Lastly, Skwabie's implementation of swim-through for advanced torpedoes launched by the player had them perform the swim-through operation *followed by* the countermeasure homing operation. This resulted in a serious degradation of torpedo performance for the player. This issue has been fixed.
+
+### Passive/semi-active homing missiles
+
+Missiles with the flag `RequireGuidance=TRUE` will be destroyed if the launch platform submerges or lowers its radar mast. This is intended to support older cruise missiles that lacked an ability to locate a target without assistance.
+
 ## Potential problems
 
 ### Anti-submarine missiles
@@ -193,6 +200,11 @@ I *think* this relates to the following note from Skwabie's change log: **AI wil
 - AI detection range against player missile is largest at missile launch. Missiles have size factor 0.4 within launch +7 sec (booster is bright and lotta smoke), 0.2 outside launch +7 sec, 0.25 beyond waypoint. – Don Kay search radar range 50k yards, so launch detection 20kyds, missile detection 10k, active missile 15k. AI will only counter fire if launch detection. Largely decreased radar detection points on player by detecting player missiles.
 - HeloMADMultiplier available in config.txt to make helicopter MAD detection a boost.
 - Wide Aperture Array sonar properties available for sonar, configurable in sensors.txt.
+
+## Version history
+
+- 0.1.0-alpha.1: Fix swim-through torpedoes, support semi-active homing cruise missiles.
+- 0.1.0-alpha: Initial release.
 
 ## Credits
 
