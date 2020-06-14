@@ -149,7 +149,7 @@ NeverExceedSpeed=25
 
 The fictional array above becomes less effective than the standard passive sensors at about 15 knots.
 
-Lastly, a target is no longer considered to have endered your "baffles" based on the hard-coded speed of 10 knots (which, in the base game, deactivates your towed array for the purpose of baffles checking). For the purpose of detecting a target in the baffles of your submarine, the average of the optimal and never exceed speed is used. For the fictional towed array above, that would be about 17 knots, meaning that your ship has no "baffles" at 15 knots but is blind to the rear at 20.
+Lastly, a target is no longer considered to have entered your "baffles" based on the hard-coded speed of 10 knots (which, in the base game, deactivates your towed array for the purpose of baffles checking). For the purpose of detecting a target in the baffles of your submarine, the average of the optimal and never exceed speed is used. For the fictional towed array above, that would be about 17 knots, meaning that your ship has no "baffles" at 15 knots but is blind to the rear at 20.
 
 ### Torpedo changes
 
